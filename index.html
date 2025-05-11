@@ -5,28 +5,23 @@
   <title>Desafio</title>
   <style>
     body { font-family: Arial; text-align: center; margin-top: 50px; }
-    #imagem { display: none; margin-top: 20px; max-width: 300px; }
+    pre { margin-top: 20px; text-align: left; display: inline-block; }
   </style>
 </head>
 <body>
 
   <h2>21) O ERRADO É O CERTU:</h2>
   <p>MFRCVPlO YENUS TZRRK NARTV JUXPITZR SXTURNF URENU NWTUMQ</p>
+
   <input type="text" id="resposta" placeholder="Insira a chave resposta:">
   <button onclick="verificarResposta()">Enviar</button>
 
-  <div>
-    <img id="imagem" src="https://drive.google.com/uc?export=view&id=19CTvUHhC7BrWvMBFJQeaZt_bGUkejwcs" alt="Imagem secreta">
-  </div>
+  <div id="saida"></div>
 
   <script>
     function verificarResposta() {
       const resposta = document.getElementById("resposta").value.trim().toLowerCase();
       if (resposta === "343") {
-        // Exibe a imagem
-        document.getElementById("imagem").style.display = "block";
-
-        // Texto da cifra
         const texto = 
 a = k
 b = m
@@ -55,10 +50,12 @@ x = w
 y = d
 z = p;
 
-        // Cria e exibe o bloco <pre>
         const preElement = document.createElement("pre");
         preElement.textContent = texto;
-        document.body.appendChild(preElement);
+
+        const saida = document.getElementById("saida");
+        saida.innerHTML = "";
+        saida.appendChild(preElement);
       }
     }
   </script>
