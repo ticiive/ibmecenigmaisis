@@ -23,34 +23,44 @@
     function verificarResposta() {
       const resposta = document.getElementById("resposta").value.trim().toLowerCase();
       if (resposta === "343") {
-        <pre>
-a = k
-b = m
-c = f
-d = b
-e = e
-f = x
-g = q
-h = n
-i = v
-j = g
-k = a
-l = u
-m = y
-n = r
-o = z
-p = s
-q = t
-r = c
-s = j
-t = o
-u = i
-v = h
-w = l
-x = w
-y = d
-z = p
-</pre>;
+            document.getElementById("imagem").style.display = "block";
+
+    // Exibe o texto formatado
+    const texto = `
+      a = k
+      b = m
+      c = f
+      d = b
+      e = e
+      f = x
+      g = q
+      h = n
+      i = v
+      j = g
+      k = a
+      l = u
+      m = y
+      n = r
+      o = z
+      p = s
+      q = t
+      r = c
+      s = j
+      t = o
+      u = i
+      v = h
+      w = l
+      x = w
+      y = d
+      z = p
+    `;
+
+    // Cria um elemento para exibir o texto
+    const preElement = document.createElement("pre");
+    preElement.textContent = texto;
+    document.body.appendChild(preElement);
+  }
+}
       }
     }
   </script>
