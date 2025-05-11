@@ -22,7 +22,7 @@
     function verificarResposta() {
       const resposta = document.getElementById("resposta").value.trim().toLowerCase();
       if (resposta === "343") {
-        const texto = 'a = k
+        const texto = `a = k
 b = m
 c = f
 d = b
@@ -47,7 +47,7 @@ v = h
 w = l
 x = w
 y = d
-z = p';
+z = p`;
 
         const preElement = document.createElement("pre");
         preElement.textContent = texto;
