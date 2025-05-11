@@ -11,7 +11,7 @@
 <body>
 
   <h2>21) O ERRADO É O CERTU:</h2>
-  <p>MFRCVPlO YENUS TZRRK NARTV JUXPITZR SXTURNF URENU NWTUMQ<p>
+  <p>MFRCVPlO YENUS TZRRK NARTV JUXPITZR SXTURNF URENU NWTUMQ</p>
   <input type="text" id="resposta" placeholder="Insira a chave resposta:">
   <button onclick="verificarResposta()">Enviar</button>
 
@@ -23,44 +23,42 @@
     function verificarResposta() {
       const resposta = document.getElementById("resposta").value.trim().toLowerCase();
       if (resposta === "343") {
-            document.getElementById("imagem").style.display = "block";
+        // Exibe a imagem
+        document.getElementById("imagem").style.display = "block";
 
-    // Exibe o texto formatado
-    const texto = `
-      a = k
-      b = m
-      c = f
-      d = b
-      e = e
-      f = x
-      g = q
-      h = n
-      i = v
-      j = g
-      k = a
-      l = u
-      m = y
-      n = r
-      o = z
-      p = s
-      q = t
-      r = c
-      s = j
-      t = o
-      u = i
-      v = h
-      w = l
-      x = w
-      y = d
-      z = p
-    `;
+        // Texto da cifra
+        const texto = 
+a = k
+b = m
+c = f
+d = b
+e = e
+f = x
+g = q
+h = n
+i = v
+j = g
+k = a
+l = u
+m = y
+n = r
+o = z
+p = s
+q = t
+r = c
+s = j
+t = o
+u = i
+v = h
+w = l
+x = w
+y = d
+z = p;
 
-    // Cria um elemento para exibir o texto
-    const preElement = document.createElement("pre");
-    preElement.textContent = texto;
-    document.body.appendChild(preElement);
-  }
-}
+        // Cria e exibe o bloco <pre>
+        const preElement = document.createElement("pre");
+        preElement.textContent = texto;
+        document.body.appendChild(preElement);
       }
     }
   </script>
