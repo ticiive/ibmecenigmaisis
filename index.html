@@ -22,8 +22,7 @@
     function verificarResposta() {
       const resposta = document.getElementById("resposta").value.trim().toLowerCase();
       if (resposta === "343") {
-        const texto = 
-a = k
+        const texto = a = k
 b = m
 c = f
 d = b
@@ -54,8 +53,10 @@ z = p;
         preElement.textContent = texto;
 
         const saida = document.getElementById("saida");
-        saida.innerHTML = "";
+        saida.innerHTML = ""; // Limpa antes de mostrar
         saida.appendChild(preElement);
+      } else {
+        document.getElementById("saida").innerHTML = "<p style='color:red;'>Senha incorreta.</p>";
       }
     }
   </script>
